@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+        integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style3.css">
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+
+    <!-- Font Awesome JS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div id="dismiss">
+                <img class="img-fluid" src="images/close.png" alt="" />
+            </div>
+
+            <div class="sidebar-header">
+                <img class="img-fluid" src="images/logo.png" alt="" />
+            </div>
+
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <a href="index3.html"><i class="fa fa-home" aria-hidden="true" style="font-size: 16px;"></i> &nbsp;
+                        Home</a>
+                </li>
+                <li>
+                    <a href=""><i class="fa fa-users" aria-hidden="true" style="font-size: 16px;"></i> &nbsp; Manage
+                        Users</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-user-circle" aria-hidden="true" style="font-size: 16px;"></i> &nbsp;
+                        Manage Clients</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-flag-checkered" aria-hidden="true" style="font-size: 16px;"></i> &nbsp;
+                        Manage Check-ins</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-tasks" aria-hidden="true" style="font-size: 16px;"></i> &nbsp; Manage
+                        Works</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-money" aria-hidden="true" style="font-size: 16px;"></i> &nbsp; Manage
+                        Leads</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-suitcase" aria-hidden="true" style="font-size: 16px;"></i>
+                        &nbsp; Manage Tour Plan</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-briefcase" aria-hidden="true" style="font-size: 16px;"></i>
+                        &nbsp; Document Vault</a>
+                </li>
+                <li>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="fa fa-money" aria-hidden="true" style="font-size: 16px;"></i> &nbsp; Order
+                        Module</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="#">Manage Product Categories</a>
+                        </li>
+                        <li>
+                            <a href="#">Manage Products</a>
+                        </li>
+                        <li>
+                            <a href="#">Manage Orders</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#pageSubmenu1" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="fa fa-area-chart" aria-hidden="true" style="font-size: 16px;"></i> &nbsp; Report
+                        Module</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu1">
+                        <li>
+                            <a href="#">Check-in Report</a>
+                        </li>
+                        <li>
+                            <a href="#">Advance Check-in Report</a>
+                        </li>
+                        <li>
+                            <a href="#">Expense Report</a>
+                        </li>
+                        <li>
+                            <a href="#">GPS Report</a>
+                        </li>
+                        <li>
+                            <a href="#">Attendance Report</a>
+                        </li>
+                        <li>
+                            <a href="#">Analytics Report</a>
+                        </li>
+                        <li>
+                            <a href="#">Consolidated Report</a>
+                        </li>
+                        <li>
+                            <a href="#">Form Report</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#pageSubmenu2" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="fa fa-eye" aria-hidden="true" style="font-size: 16px;"></i> &nbsp; Admin Settings</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu2">
+                        <li>
+                            <a href="#">Dynamic Check-in Fields</a>
+                        </li>
+                        <li>
+                            <a href="#">Access Groups</a>
+                        </li>
+                        <li>
+                            <a href="#">Manage Branches</a>
+                        </li>
+                        <li>
+                            <a href="#">Payment History</a>
+                        </li>
+                        <li>
+                            <a href="#">Manage Custom Forms</a>
+                        </li>
+                        <li>
+                            <a href="#">Modify Packages</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#pageSubmenu3" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="fa fa-cogs" aria-hidden="true" style="font-size: 16px;"></i> &nbsp; Settings
+                    </a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu3">
+                        <li>
+                            <a href="#">Misc Settings</a>
+                        </li>
+                        <li>
+                            <a href="#">Edit Company</a>
+                        </li>
+                        <li>
+                            <a href="#">Change Password</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#"><i class="fa fa-envelope-o" aria-hidden="true" style="font-size: 16px;"></i>
+                        &nbsp; Feedback</a>
+                </li>
+
+                <li>
+                    <a href="#"><i class="fa fa-sign-out" aria-hidden="true" style="font-size: 16px;"></i>
+                        &nbsp; Logout</a>
+                </li>
+
+            </ul>
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg fixed-top">
+                <div class="container-fluid">
+
+                    <div id="sidebarCollapse" class="menu-icon">
+                        <img class="img-fluid" src="images/menu_icon.png">
+                    </div>
+                    <a class="navbar-brand mr-auto pl-1" href="#">
+                        <img src="images/logo1.png" class="img-fluid" alt="" />
+                    </a>
+
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <span class="notification_container">
+                                    <a class="show_notifications">
+                                        <img src="images/bell-icon.png" width="28" height="28">
+                                    </a>
+                                    <span class="notifications" style="display: none;">
+                                        <div class="arrow-up"></div>
+                                        <ul>
+                                            <li>
+                                                <a class="click_notification" style="font-weight: 400;">
+                                                    <span class="notification_icon">
+                                                        <i class="fa fa-flag" aria-hidden="true"
+                                                            style="color: #a9a9a9;"></i>
+                                                    </span>
+                                                    <span class="notification_text">
+                                                        Attendance started by
+                                                        <span class="notification_time">21 hours ago </span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="noti_footer_link">
+                                                <a href="#"><i class="fa fa-flag"
+                                                        aria-hidden="true"></i>&nbsp;&nbsp;View
+                                                    All</a>
+                                            </li>
+                                        </ul>
+                                    </span>
+                                </span>
+                            </li>
+                            <li class="nav-item">
+                                <a>
+                                    <img src="images/need_help.png" class="img-fluid">
+                                    <span class="help_tag">Need Help?</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                </div>
+            </nav>
+
+
+            <!-- =========== Home Page ============= -->
+            <div class="container-fluid home-container">
+
+                <div class="row">
+                    <div class="contentHeader">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+                            <div class="div_text">
+                                <span class="Iconheading">
+                                    <img src="images/iocn_company.png" alt="" style="margin-top: -15px;">
+                                </span><span style="text-transform: capitalize;">Company / </span>
+                                <span class="Heading03">
+                                    Profcyma Solutions Pvt Ltd
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col-lg-12 pl-0 pr-0">
+                        <div class="card homeCard">
+
+                            <div class="card-body">
+
+                                <div class="row User-row">
+                                    <div class="col-sm-3">
+
+                                        <div class="left_user_section">
+                                            <div class="user_picture_container">
+                                                <div class="user_picture">
+                                                    <a href="#">
+                                                        <img src="images/no_image.png" alt="" class="no_images">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <h2 class="">Sawan Aware</h2>
+                                            <h3 class="">CTO</h3>
+
+                                            <div class="mail_links02">
+                                                <span class="edit_icon">
+                                                    <a href="#">
+                                                        <img src="" alt="">
+                                                    </a>
+                                                </span>
+                                                <span class="buttonMargin timezone desk_timezone" title="">
+                                                    <i class="fa fa-clock-o"></i>&nbsp;3:30 PM
+                                                </span>
+                                            </div>
+
+                                            <div class="mail_links">
+                                                <a href="#" class="Button07">
+                                                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                                                    <span class="textbutton">sawan.aware.1@gmail.com</span>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="packs_container">
+                                            <a href="#" style="text-decoration: none; cursor: pointer;">
+                                                <div class="package_content">
+                                                    <sup>User</sup>
+                                                    <div class="user_count">10</div>
+                                                    <h4 class="text-upgrade">Upgrade</h4>
+                                                </div>
+                                                <div class="package_Title">Enterprise</div>
+                                            </a>
+                                        </div>
+                                        <div class="pack_heading">Current pack</div>
+
+                                    </div>
+
+                                    <div class="col-sm-3">
+                                        <div class="card reportd-box">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Check-in</h5>
+                                                <div class="round_stats">
+                                                    <div class="stats_content">
+                                                        <div class="number_stats">1</div>
+                                                        <div class="month_count">0<span class="last_month">Last
+                                                                month</span></div>
+                                                    </div>
+                                                </div>
+                                                <ul class="Ul_report_point">
+                                                    <li title="Test Client">Test Client</li>
+                                                </ul>
+                                                <a href="#" class="more_link">More<i class="fa fa-angle-right"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-3">
+                                        <div class="card reportd-box">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Work assigned</h5>
+                                                <div class="round_stats">
+                                                    <div class="stats_content">
+                                                        <div class="number_stats">2</div>
+                                                        <div class="month_count">0<span class="last_month">Last
+                                                                month</span></div>
+                                                    </div>
+                                                </div>
+                                                <ul class="Ul_report_point">
+                                                    <li title="Test Client">Test Client</li>
+                                                    <li title="Test Client">Urgent Meeting</li>
+                                                </ul>
+                                                <a href="#" class="more_link">More<i class="fa fa-angle-right"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-3">
+                                        <div class="card reportd-box">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Expense reported</h5>
+                                                <div class="round_stats">
+                                                    <div class="stats_content">
+                                                        <div class="number_stats">0</div>
+                                                        <div class="month_count">0<span class="last_month">Last
+                                                                month</span></div>
+                                                    </div>
+                                                </div>
+                                                <a href="#" class="more_link">More<i class="fa fa-angle-right"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="row chart-row">
+
+                                    <div class="col-md-6">
+                                        <div class="card border-0">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Check-in report</h5>
+                                                <div class="myChartDiv pt-3">
+                                                    <canvas id="myChart" style="max-width: 100%;"></canvas>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="card border-0">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Live Track</h5>
+                                                <div class="live_track_inactive pt-3">
+                                                    <span class="live_track_inactive_text">Information Not
+                                                        Available</span>
+                                                    <img src="images/live-track-inactive.jpg" class="img-fluid"
+                                                        alt="Live Track">
+                                                    <!-- <iframe
+                                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.1741318038307!2d73.77189225073596!3d18.521031573931577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf0c81200233%3A0x708aa0bee8475810!2sProfcyma%20career%20solution!5e0!3m2!1sen!2sin!4v1611564442371!5m2!1sen!2sin"
+                                                        width="100%" height="450" frameborder="0" style="border:0;"
+                                                        allowfullscreen="" aria-hidden="false" tabindex="0">
+                                                    </iframe> -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <!-- ------------------------------ -->
+
+                <section id="userSection">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-3 col-md-2 col-lg-1 pl-0 pr-0 left_containerheading">
+                            <div class="heading_container">
+                                <h3 class="Heading03">
+                                    Users
+                                    <span class="lds-notification">2</span>
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-5 pl-0 pr-0">
+                            <div class="ContainerSearchBox">
+                                <div class="container-2">
+                                    <span class="icon"><i class="fa fa-search"></i></span>
+                                    <input type="search" id="search" placeholder="Search by Name..." />
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-xs-12 col-sm-5 col-md-6 col-lg-6 pr-0  MBAddbuttonCustorm right_containerheading">
+                            <span class="buttoncontainer03">
+                                <span class="addlinkbuttonstyleContainer">
+                                    <a href="pages/addUser.html" class="Adduser">Add Employee</a>
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-lg-12 pl-0 pr-0">
+
+                            <div class="card bg-dark">
+                                <div class="card-body">
+                                    <div class="row pt-2">
+
+                                        <div class="col-lg-7 leftcolHeadingToggle">
+                                            <div class="user_list_container">
+                                                <div class="user_picture">
+                                                    <a href="#">
+                                                        <img src="images/no_image.png" alt="" class="no_images">
+                                                    </a>
+                                                </div>
+                                                <a href="#" class="employee_name_link">
+                                                    <h2 title="Grishma">
+                                                        Grishma
+                                                        <svg width="15" height="20">
+                                                            <circle cx="10" cy="7" r="4.5" stroke="black"
+                                                                stroke-width="0" fill="#28c87b"></circle>
+                                                        </svg>
+                                                    </h2>
+                                                </a>
+                                                <h3 class="textaddfiled mt-2" style="font-style: normal;">
+                                                    QA
+                                                </h3>
+                                            </div>
+                                        </div>
+
+                                        <div class="rightcolHeadingToggle col-lg-5">
+                                            <div class="Stats02">
+                                                <div class="StatsContent02">
+                                                    <img src="images/autharize_icon.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="Addfield_buttoncontainer Accounttoggledrp099">
+                                                <span class="mb_btn_margin">
+                                                    <a class="Button11" href="pages/assignwork.html">Assign work</a>
+                                                </span>
+                                                <span class="mb_btn_margin">
+                                                    <a class="Button11" href="pages/checkIn.html">view check-ins</a>
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="row rowContent">
+                        <div class="col-lg-12 pl-0 pr-0">
+                            <span class="buttoncontainer03 mt-3 mb-3">
+                                <a class="Adduser" href="#">view all</a>
+                            </span>
+                        </div>
+                    </div>
+
+                </section>
+
+                <div class="row rowContent">
+                    <div class="col-lg-12 pl-0 pr-0">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="card-title">
+                                    <h4>Recent Check-Ins</h4>
+                                </div>
+
+                                <div class="checking_list_container">
+                                    <div class="row">
+                                        <div class="col-lg-1">
+                                            <div class="UploadLogoContainer02">
+                                                <img src="images/no_image.png" alt="" />
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-7">
+                                            <div class="HeadingContainer">
+                                                <div class="Heading02"><span>Test Client by Sameer Dilliwar</span></div>
+                                                <div class="Heading03">Time: <span>22-Jan-2021 04:35 PM</span></div>
+                                                <div class="Heading03">Details: <span>Testing only</span></div>
+                                                <div class="Heading03">Location: <span>DSK Ranwara Rd Patil Nagar
+                                                        Bavdhan
+                                                        Pune Maharashtra 411021 India</span></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-4">
+                                            <span class="buttoncontainer04">
+                                                <a href="#">
+                                                    <span class="buttoncontainer04 buttonleftside">
+                                                        <a class="Adduser" href="#">Details</a>
+                                                    </span>
+                                                </a>
+                                            </span>
+                                            <div class="buttoncontainer04">
+                                                <a href="#" class="Button10">
+                                                    <i class="fa fa-trash"></i>
+                                                    <span style="position: relative;left: 3px;">delete</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <span class="buttoncontainer03">
+                                    <a class="buttonview" href="#">view
+                                        all</a>
+                                </span>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+    <script src="assets/chart.js/Chart.min.js"></script>
+    <script src="assets/chart.js/Customchart.js"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#sidebar").mCustomScrollbar({
+                theme: "minimal"
+            });
+
+            $('#dismiss, .overlay').on('click', function () {
+                $('#sidebar').removeClass('active');
+                $('.overlay').removeClass('active');
+            });
+
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').addClass('active');
+                $('.overlay').addClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+            $(".show_notifications").click(function () {
+                $(".notifications").toggle('slow');
+            });
+        });
+    </script>
+</body>
+
+</html>
